@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Camiseta deportiva",
+    "category": "Ropa",
+    "description": "Camiseta de algodón para entrenamiento",
+    "price": 3500,
+    "stock": 120
+  },
+  {
+    "name": "Auriculares inalámbricos",
+    "category": "Electrónica",
+    "description": "Auriculares Bluetooth con cancelación de ruido",
+    "price": 15000,
+    "stock": 45
+  },
+  {
+    "name": "Cafetera automática",
+    "category": "Electrodomésticos",
+    "description": "Cafetera programable con molinillo integrado",
+    "price": 42000,
+    "stock": 20
+  },
+  {
+    "name": "Zapatillas urbanas",
+    "category": "Calzado",
+    "description": "Zapatillas de cuero sintético para uso diario",
+    "price": 18000,
+    "stock": 75
+  },
+  {
+    "name": "Mochila escolar",
+    "category": "Accesorios",
+    "description": "Mochila resistente al agua con múltiples compartimentos",
+    "price": 9500,
+    "stock": 60
+  }
+]
