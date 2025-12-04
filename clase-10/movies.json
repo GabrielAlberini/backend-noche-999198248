@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Sci-Fi",
+    "rating": 8.8,
+    "director": "Christopher Nolan"
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action",
+    "rating": 9.0,
+    "director": "Christopher Nolan"
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "rating": 8.6,
+    "director": "Christopher Nolan"
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Sci-Fi",
+    "rating": 8.7,
+    "director": "Lana Wachowski"
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "genre": "Adventure",
+    "rating": 8.1,
+    "director": "Steven Spielberg"
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "genre": "Drama",
+    "rating": 7.8,
+    "director": "James Cameron"
+  },
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "genre": "Sci-Fi",
+    "rating": 7.9,
+    "director": "James Cameron"
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "genre": "Action",
+    "rating": 8.5,
+    "director": "Ridley Scott"
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Animation",
+    "rating": 8.3,
+    "director": "John Lasseter"
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "genre": "Animation",
+    "rating": 8.2,
+    "director": "Andrew Stanton"
+  }
+]
