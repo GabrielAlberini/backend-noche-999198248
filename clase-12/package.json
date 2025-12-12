@@ -1,0 +1,16 @@
+{
+  "name": "clase-11",
+  "version": "4.0.0",
+  "description": "Repaso Mongodb",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "gabrielalberini",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "mongoose": "^9.0.1"
+  }
+}
