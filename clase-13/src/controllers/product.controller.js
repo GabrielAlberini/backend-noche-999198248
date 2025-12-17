@@ -1,12 +1,11 @@
-import { connectDb } from "./config/mongodb.js"
-import { Product } from "./models/product.model.js"
+import { connectDb } from "../config/mongodb.js"
+import { Product } from "../models/product.model.js"
 
 
 const getProducts = async () => {
   connectDb()
   const products = await Product.find()
-  console.log(products)
-  process.exit(1)
+  return products
 }
 
 const createProduct = async (data) => {
@@ -33,3 +32,5 @@ const deleteProduct = async (id) => {
   console.log(deletedProduct)
   process.exit(1)
 }
+
+export { getProducts, createProduct, updateProduct, deleteProduct }
