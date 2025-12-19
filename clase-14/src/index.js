@@ -1,4 +1,4 @@
-import { getProducts } from "./controllers/product.controller.js"
+import { createProduct, getProducts } from "./controllers/product.controller.js"
 import express from "express"
 import cors from "cors"
 
@@ -9,18 +9,18 @@ app.use(cors())
 app.use(express.json())
 
 // callback
+// OBTENER LA LISTA DE PRODUCTOS
 app.get("/products", async (req, res) => {
   const products = await getProducts()
   res.send(products)
 })
 
-app.post("/products", (req, res) => {
+// AGREGAR UN PRODUCTO
+app.post("/products", async (req, res) => {
   // req -> request -> información del cliente
   const body = req.body
-
-  console.log(body)
-
-  res.json("✅ Recibido")
+  const createdProduct = await createProduct(body)
+  res.json(createdProduct)
 })
 
 // 0 - 65656

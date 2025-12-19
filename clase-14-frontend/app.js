@@ -14,8 +14,19 @@ const traerProductos = async () => {
   const respuestaDelServidor = await fetch("http://localhost:50000/products")
   const products = await respuestaDelServidor.json()
 
+  $section.innerHTML = ""
+
   products.forEach((product) => {
-    $section.innerHTML += `<h3>${product.name}</h3>`
+    $section.innerHTML += `
+      <div>
+        <small>${product.category}</small>
+        <h3>${product.name}</h3>
+        <h3>$${product.price} - Stock: ${product.stock}</h3>
+        <p>${product.description}</p>
+        <button>Actualizar</button>
+        <button>Borrar</button>
+      </div>
+    `
   })
 }
 
@@ -29,14 +40,11 @@ $form.addEventListener("submit", async (e) => {
 
   const dataProduct = {
     name: $name.value,
-    price: $price.value,
-    stock: $stock.value,
+    price: Number($price.value),
+    stock: Number($stock.value),
     category: $category.value,
     description: $description.value
   }
-
-  // envair el obj al backend
-  console.log(dataProduct)
 
   // method: POST
   // url: /products
@@ -54,7 +62,9 @@ $form.addEventListener("submit", async (e) => {
 
   const data = await response.json()
 
-  console.log(data)
+  alert(`✅ Producto agregado con éxito id: ${data._id}`)
+
+  traerProductos()
 
   $name.value = ""
   $price.value = ""

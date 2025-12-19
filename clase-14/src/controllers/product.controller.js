@@ -4,15 +4,14 @@ import { Product } from "../models/product.model.js"
 
 const getProducts = async () => {
   connectDb()
-  const products = await Product.find()
+  const products = await Product.find().sort({ _id: -1 })
   return products
 }
 
 const createProduct = async (data) => {
   connectDb()
   const createdProduct = await Product.create(data)
-  console.log(createdProduct)
-  process.exit(1)
+  return createdProduct
 }
 
 const updateProduct = async (id, updates) => {
