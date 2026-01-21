@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "frontend-999200928",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
