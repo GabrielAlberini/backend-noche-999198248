@@ -1,0 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Home } from "../pages/Home"
+import { NotFound } from "../pages/NotFound"
+import { About } from "../pages/About"
+import { Login } from "../pages/Login"
+
+const RouterApp = () => {
+
+  // path -> url en el navegador
+  // elemento -> que renderizo cuando el path es tal...
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/catalog" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export { RouterApp }
